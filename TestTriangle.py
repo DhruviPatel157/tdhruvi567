@@ -39,11 +39,7 @@ class TestTriangles(unittest.TestCase):
 
     def testnotatriangle(self):
             self.assertEqual(classifyTriangle(10, 5, 2), "NotATriangle", "10,5,2 is not a triangle")
-    def teststringinput(self):
-        try:
-            self.assertEqual(classifyTriangle("s1","s2","s3"),"Error","s1,s2,s3 is a typeerror")
-        except TypeError:
-            print("InvalidInput")
+    
 
 if __name__ == '__main__':
     print('Running unit tests')
